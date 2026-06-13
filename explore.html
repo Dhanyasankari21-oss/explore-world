@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Wonder World - Explore</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+<div class="logo">
+🌍 Wonder World
+</div>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="explore.html">Explore</a>
+<a href="book.html">Book</a>
+</nav>
+
+</header>
+
+<section class="explore-hero">
+
+<div class="overlay"></div>
+
+<div class="explore-content">
+
+<h1>Explore Amazing Destinations</h1>
+
+<p>
+Discover beautiful countries, famous landmarks,
+local culture and unforgettable experiences.
+</p>
+
+</div>
+
+</section>
+
+<section class="popular-banner">
+
+<h2>🔥 Popular Destinations</h2>
+
+<p>
+Find your next adventure from our top travel destinations.
+</p>
+
+</section>
+
+<div class="region-filter">
+
+<button onclick="filterRegion('all')">All</button>
+
+<button onclick="filterRegion('asia')">
+Asia 🌏
+</button>
+
+<button onclick="filterRegion('europe')">
+Europe 🏰
+</button>
+
+<button onclick="filterRegion('america')">
+America 🌎
+</button>
+
+<button onclick="filterRegion('africa')">
+Africa 🌍
+</button>
+
+<button onclick="filterRegion('oceania')">
+Oceania 🌊
+</button>
+
+</div>
+
+<div class="filter-area">
+
+<input
+type="text"
+id="searchBox"
+placeholder="🔍 Search Country..."
+onkeyup="searchCountry()"
+>
+
+<select onchange="filterByPrice(this.value)">
+
+<option value="">
+Filter Price
+</option>
+
+<option value="low">
+Below ₹50,000
+</option>
+
+<option value="mid">
+₹50,000 - ₹1,00,000
+</option>
+
+<option value="high">
+Above ₹1,00,000
+</option>
+
+</select>
+
+</div>
+
+<div id="countryContainer"></div>
+
+<div id="detailsBox"></div>
+
+<footer class="footer">
+
+  <div class="footer-container">
+
+    <div class="footer-col">
+      <h2>Wonder World</h2>
+      <p>Travel. Explore. Discover.</p>
+    </div>
+
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="explore.html">Explore</a>
+        <a href="book.html">Book</a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h3>Support</h3>
+      <div class="links">
+        <a href="#">Help Center</a>
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h3>Follow Us</h3>
+      <div class="links">
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 Wonder World. All rights reserved.
+  </div>
+
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
